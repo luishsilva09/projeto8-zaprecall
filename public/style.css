@@ -65,10 +65,26 @@ li{
 .pergunta{
     width: 299px;
     height: 131px;
-
     background: #FFFFD5;
     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
+}
+button{
+    width: 85px;
+    height: 37px;
+    border-radius: 5px;
+    border:none;
+    color:#ffffff;
+    font-size: 12px;
+}
+.naoLembrei{
+    background-color:#FF3030 ;
+}
+.quaseNao{
+    background-color: #FF922E;
+}
+.zap{
+    background-color: #2FBE34;
 }
 footer{
     width: 100%;
@@ -84,3 +100,4 @@ footer{
     font-size: 22px;
 
 }
+

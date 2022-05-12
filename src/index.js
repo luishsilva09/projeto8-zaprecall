@@ -1,11 +1,10 @@
 import ReactDOM from 'react-dom';
-import PageInicial from './PageInicial';
-import Quests from './Quests';
+import App from './App';
 function Index(){
     return(
-        <>
-        <Quests />
-        </>
+       <>
+       <App />
+       </>
     );
 };
 

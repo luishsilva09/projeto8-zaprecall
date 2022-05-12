@@ -11,10 +11,16 @@ export default function Quests(){
         {question:'Usamos props para __', answers:'passar diferentes informações para componentes '},
         {question:'Usamos estado (state) para __', answers:'dizer para o React quais informações quando atualizadas devem renderizar a tela novamente'},
     ])
-    const [Teste, setTeste] = React.useState()
-    function Quest(quest, index){
-        setTeste(quest)
-        console.log(Teste)        
+    const [Teste, setTeste] = React.useState(<li onClick={Quest}>Pergunta</li>)
+    function Quest(){
+        console.log('ola')
+        setTeste(
+            <li className="pergunta" onClick={Quest}>
+            <button className='naoLembrei'>Não lembrei</button>
+            <button className='quaseNao'>Quase nâo lembrei</button>
+            <button className='zap'>Zap!</button>
+        </li>)
+          
     }
 
     return(
@@ -23,8 +29,8 @@ export default function Quests(){
             <img src="./images/logo.png" alt="logo"/>
             <h1>ZapRecall</h1>
             <ul>
-                
-               {Questions.map((quest, index) => <li  key={index} onClick={() => Quest( quest, index)}>Pergunta {index+1}<ion-icon name="play-outline"></ion-icon></li>)}
+                {Teste}
+               {/*{Questions.map((quest, index) => <li  key={index} onClick={() => Quest( quest, index)}>Pergunta {index+1}<ion-icon name="play-outline"></ion-icon></li>)}*/}
             </ul>
             <footer>
                 <p>0/4 CONCLUÍDOS</p>
