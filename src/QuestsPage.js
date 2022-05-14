@@ -1,9 +1,9 @@
 import React from 'react';
 import logo from './componets/images/logo.png';
-import RenderQuest from './RenderQuest';
-import Perguntas from './Perguntas';
+import Quest from './Quest';
+import Footer from './Footer';
 
-export default function Quests() {
+export default function QuestsPage() {
     const [Questions, setQuestions] = React.useState([
         { question: 'O que é JSX?', answers: 'Uma extensão de linguagem do JavaScript' },
         { question: 'O React é __ ', answers: 'uma biblioteca JavaScript para construção de interfaces' },
@@ -14,10 +14,6 @@ export default function Quests() {
         { question: 'Usamos props para __', answers: 'passar diferentes informações para componentes ' },
         { question: 'Usamos estado (state) para __', answers: 'dizer para o React quais informações quando atualizadas devem renderizar a tela novamente' },
     ])
-    
-    
-    
-   
     return (
         <div className="quests">
             <header>
@@ -26,13 +22,12 @@ export default function Quests() {
             </header>
             <main>
                 <ul>
-                    {Questions.map((quest , index) => <Perguntas key={index} index={index}  quest={quest}/>)}      
+                    {Questions.map((quest, index) => <Quest index={index} question={quest} />)}
                 </ul>
 
             </main>
-            <footer>
-                <p>0/{Questions.length} CONCLUÍDOS</p>
-            </footer>
+            <Footer numberQuest={Questions.length}/>
+                
         </div>
     )
 }

@@ -106,14 +106,38 @@ button{
     font-size: 12px;
     cursor: pointer;
 }
-.naoLembrei{
+button.naoLembrei{
     background-color:#FF3030 ;
 }
-.quaseNao{
+.naoLembrei p{
+    color:red;
+    text-decoration: line-through;
+}
+.naoLembrei ion-icon{
+    color:red;
+    font-size:  30px;
+}
+
+button.quaseNao{
     background-color: #FF922E;
 }
-.zap{
+.quaseNao p{
+    color:#FF922E;
+    text-decoration: line-through;
+}
+.quaseNao ion-icon{
+    color: #FF922E;
+    font-size: 30px;
+}
+button.zap{
     background-color: #2FBE34;
+}
+.zap p{
+    color:#2FBE34;
+}
+.zap ion-icon{
+    color: #2FBE34;
+    font-size: 30px;
 }
 footer{
     width: 100%;

@@ -1,15 +1,15 @@
 import setinha from './componets/images/setinha.png';
 import RenderAnswers from './RenderAnswers';
 
-export default function Quest({quest, Teste, setTeste}) {
-    function render(Teste, setTeste){
-        setTeste([<RenderAnswers answers={quest.answers} />])
+export default function Quest({question, quest, setQuest, index}) {
+    function render(quest, setQuest){
+        setQuest([<RenderAnswers answers={question.answers} quest={quest} setQuest={setQuest} index={index}/>])
 
     }
     return(
-        <li className='pergunta'>
-            <p>{quest.question}</p>
-            <img onClick={() => render(Teste, setTeste)} src={setinha} alt='virar' />
+        <li key={index}className='pergunta'>
+            <p>{question.question}</p>
+            <img onClick={() => render(quest, setQuest)} src={setinha} alt='virar' />
         </li>
     )
     
