@@ -32,6 +32,7 @@ h1{
     text-align: center;
     margin-top: 15px;
     margin-bottom: 30px;
+    margin-left: 20px;
 }
 .btnStart{
     width: 246px;
@@ -62,12 +63,39 @@ li{
     font-weight: 700;
     margin-bottom: 25px;
 }
-.pergunta{
+header{
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+}
+main{
+    margin-top: 50px;
+}
+.quests{
+    margin-bottom: 90px;
+}
+.resposta, .pergunta{
     width: 299px;
     height: 131px;
     background: #FFFFD5;
     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    position: relative;
+}
+.pergunta img{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    width: 30px;
+    cursor: pointer;
+}
+.buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
 }
 button{
     width: 85px;
@@ -76,6 +104,7 @@ button{
     border:none;
     color:#ffffff;
     font-size: 12px;
+    cursor: pointer;
 }
 .naoLembrei{
     background-color:#FF3030 ;

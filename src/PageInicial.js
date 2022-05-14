@@ -1,4 +1,5 @@
 import React from "react";
+import logo from './componets/images/logo1.svg'
 
 export default function PageInicial(props) {
     function iniciar() {
@@ -7,7 +8,7 @@ export default function PageInicial(props) {
 
     return (
         <div className="pageLogin">
-            <img src="./images/logo.png" alt="logo" />
+            <img src={logo} alt="logo" />
             <h1>ZapRecall</h1>
             <div className="btnStart" onClick={iniciar}>Iniciar Recall!</div>
         </div>
