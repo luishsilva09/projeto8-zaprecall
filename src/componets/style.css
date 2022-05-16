@@ -1,18 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;500;600;700;800;900&family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 * {
     box-sizing: border-box;
-  }
-body{
+}
+
+body {
     background-color: #FB6B6B;
     font-family: 'recursive';
     display: flex;
     justify-content: center;
 }
-ion-icon{
+
+ion-icon {
     font-size: 23px;
 }
-.pageLogin{
+
+.pageLogin {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,35 +25,37 @@ ion-icon{
     height: 667px;
 }
 
-.pageLogin img{
+.pageLogin img {
     width: 136px;
     height: 161px;
 }
-h1{
+
+h1 {
     font-family: 'Righteous';
     font-size: 36px;
-    color:#ffffff;
+    color: #ffffff;
     text-align: center;
     margin-top: 15px;
     margin-bottom: 30px;
     margin-left: 20px;
 }
-.btnStart{
+
+.btnStart {
     width: 246px;
     height: 54px;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #ffffff;
-    border:1px solid #d70900;
+    border: 1px solid #d70900;
     border-radius: 5px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     font-size: 18px;
-    color:#d70900;
+    color: #d70900;
     cursor: pointer;
 }
 
-li{
+li {
     width: 300px;
     height: 65px;
     background-color: #ffffff;
@@ -63,18 +69,23 @@ li{
     font-weight: 700;
     margin-bottom: 25px;
 }
-header{
+
+header {
     display: flex;
     margin-top: 50px;
     justify-content: center;
 }
-main{
+
+main {
     margin-top: 50px;
 }
-.quests{
+
+.quests {
     margin-bottom: 90px;
 }
-.resposta, .pergunta{
+
+.resposta,
+.pergunta {
     width: 299px;
     height: 131px;
     background: #FFFFD5;
@@ -85,72 +96,89 @@ main{
     font-weight: 400;
     position: relative;
 }
-.pergunta img{
+
+.pergunta img {
     position: absolute;
     right: 10px;
     bottom: 10px;
     width: 30px;
     cursor: pointer;
 }
-.buttons{
+
+.buttons {
     width: 100%;
     display: flex;
     justify-content: space-around;
 }
-button{
+
+button {
     width: 85px;
     height: 37px;
     border-radius: 5px;
-    border:none;
-    color:#ffffff;
+    border: none;
+    color: #ffffff;
     font-size: 12px;
     cursor: pointer;
 }
-button.naoLembrei{
-    background-color:#FF3030 ;
-}
-.naoLembrei p{
-    color:red;
-    text-decoration: line-through;
-}
-.naoLembrei ion-icon{
-    color:red;
-    font-size:  30px;
+
+button.naoLembrei {
+    background-color: #FF3030;
 }
 
-button.quaseNao{
-    background-color: #FF922E;
-}
-.quaseNao p{
-    color:#FF922E;
+.naoLembrei p {
+    color: red;
     text-decoration: line-through;
 }
-.quaseNao ion-icon{
+
+ion-icon[name="close-circle"] {
+    color: red;
+    font-size: 30px;
+}
+
+button.quaseNao {
+    background-color: #FF922E;
+}
+
+.quaseNao p {
+    color: #FF922E;
+    text-decoration: line-through;
+}
+
+ion-icon[name="help-circle"] {
     color: #FF922E;
     font-size: 30px;
 }
-button.zap{
+
+button.zap {
     background-color: #2FBE34;
 }
-.zap p{
-    color:#2FBE34;
+
+.zap p {
+    color: #2FBE34;
 }
-.zap ion-icon{
+
+ion-icon[name="checkmark-circle"] {
     color: #2FBE34;
     font-size: 30px;
 }
-footer{
+
+.footer {
     width: 100%;
-    height: 70px;
+    height: auto;
+    min-height: 80px;
     background: #FFFFFF;
     box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
     position: fixed;
     bottom: 0;
-    left:  0;
+    left: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 22px;
+    flex-direction: column;
 
 }
 
+.footer h2 {
+    font-weight: 700;
+}

@@ -1,7 +1,8 @@
-export default function Footer({numberQuest}){
-    return(
-        <footer>
-            <p>0/{numberQuest} CONCLUÍDOS</p>
-        </footer>
-    )
-}
+import React from "react";
+export default function Footer(props) {
+    return (
+        <div className="footer">
+            {props.children}
+        </div>
+    );
+};
