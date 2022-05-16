@@ -155,6 +155,7 @@ button.zap {
 
 .zap p {
     color: #2FBE34;
+    text-decoration: line-through;
 }
 
 ion-icon[name="checkmark-circle"] {
